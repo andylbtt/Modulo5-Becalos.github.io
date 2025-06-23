@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rick & Morty API - Fetch vs Axios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Rick & Morty - Personajes</h1>
+  <button onclick="fetchCharacters()">Cargar con Fetch</button>
+  <button onclick="axiosCharacters()">Cargar con Axios</button>
+  <button onclick="prevPage()">Anterior</button>
+  <button onclick="nextPage()">Siguiente</button>
+  <button onclick="clearFilters()">Limpiar Filtros</button>
+
+  <select id="genderFilter" onchange="applyFilters()">
+    <option value="">Todos los géneros</option>
+    <option value="Male">Masculino</option>
+    <option value="Female">Femenino</option>
+    <option value="Genderless">Sin género</option>
+    <option value="unknown">Desconocido</option>
+  </select>
+
+  <select id="speciesFilter" onchange="applyFilters()">
+    <option value="">Todas las especies</option>
+    <option value="Human">Humano</option>
+    <option value="Alien">Alienígena</option>
+    <option value="Robot">Robot</option>
+    <option value="Animal">Animal</option>
+    <option value="Mythological Creature">Criatura mitológica</option>
+    <option value="unknown">Desconocida</option>
+  </select>
+
+  <div id="data-container"></div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modal-details"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

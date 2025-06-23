@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulador de Pedidos - Cafetería</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf3;
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    img.logo {
+      width: 50px;
+      height: 50px;
+      border-radius: 8px;
+    }
+
+    h1 {
+      color: #7a5c58;
+    }
+
+    button {
+      background-color: #ffddc1;
+      border: none;
+      padding: 10px 20px;
+      color: #5c4b51;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-bottom: 1rem;
+    }
+
+    button:hover {
+      background-color: #ffe6d6;
+    }
+
+    ul#orderList {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      background-color: #ffe4e1;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    li.completed {
+      background-color: #d4f8e8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="https://c0.klipartz.com/pngpicture/195/605/gratis-png-cafe-cafe-ilustracion-de-te-cafe-cafe-bistro-de-dibujos-animados-cafeteria.png" alt="Logo de Cafetería">
+    <h1>Cafetería: Simulador de Pedidos</h1>
+  </header>
+
+  <button id="addOrderBtn">Agregar Pedido</button>
+  <ul id="orderList"></ul>
+
+  <script src="app.js"></script>
+</body>
+</html>
