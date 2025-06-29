@@ -1,0 +1,11 @@
+{
+  "name": "mi-exploracion-espacial",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Tu Nombre",
+  "license": "MIT"
+}
