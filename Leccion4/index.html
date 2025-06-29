@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reserva de Restaurante</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.7kaXd8nEuaKRVwIhRIoUAAHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Logo del Restaurante" class="logo">
+    <h1>Reserva de Mesas</h1>
+    <div class="formulario">
+      <input type="text" id="nombreCliente" placeholder="Nombre del Cliente">
+      <input type="number" id="mesasSolicitadas" placeholder="Número de Mesas">
+      <button onclick="hacerReservaDesdeHTML()">Reservar</button>
+    </div>
+    <div id="resultado"></div>
+  </div>
+  <script src="reservas.js"></script>
+</body>
+</html>
