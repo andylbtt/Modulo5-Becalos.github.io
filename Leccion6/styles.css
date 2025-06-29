@@ -27,7 +27,7 @@ form {
 
 label {
   font-weight: bold;
-  color: #8b3a62;
+  color: #cd5792;
 }
 
 input {
@@ -64,6 +64,6 @@ button:hover {
   padding: 0.5em;
   margin-bottom: 0.5em;
   border-radius: 5px;
-  color: #a52a2a;
+  color: #bd5c5c;
   font-size: 0.9em;
 }
